@@ -1,0 +1,5 @@
+--cpu Cortex-M4.fp -g --apcs=interwork 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F4xx 
+--list ".\Flash\os_asm.lst" --xref -o ".\Flash\os_asm.o" --depend ".\Flash\os_asm.d" "OS\os_asm.s"
