@@ -150,8 +150,9 @@ ARM Macro Assembler    Page 3
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M4.fp --apcs=interwork --depend=.\Fla
-sh\os_asm.d -o.\Flash\os_asm.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Inclu
-de -IC:\Keil\ARM\Inc\ST\STM32F4xx --list=.\Flash\os_asm.lst OS\os_asm.s
+sh\os_asm.d -o.\Flash\os_asm.o -I"C:\Program Files\Keil\ARM\RV31\INC" -I"C:\Pro
+gram Files\Keil\ARM\CMSIS\Include" -I"C:\Program Files\Keil\ARM\Inc\ST\STM32F4x
+x" --predefine="__EVAL SETA 1" --list=.\Flash\os_asm.lst OS\os_asm.s
 
 
 
@@ -316,4 +317,4 @@ Symbol: _svc_OS_yield
       At line 49 in file OS\os_asm.s
 Comment: _svc_OS_yield used once
 9 symbols
-350 symbols in table
+351 symbols in table

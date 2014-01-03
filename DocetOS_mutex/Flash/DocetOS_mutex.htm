@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Flash\DocetOS_mutex.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Flash\DocetOS_mutex.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.02 [Build 28]: Last Updated: Mon Nov 18 11:13:59 2013
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 24]: Last Updated: Fri Jan 03 20:11:58 2014
 <BR><P>
 <H3>Maximum Stack Usage =        680 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -282,7 +282,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[4]"></a>HardFault_Handler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, hardfault.o(.emb_text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = HardFault_Handler &rArr; HardFault_HandlerC
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = HardFault_Handler &rArr; HardFault_HandlerC
 </UL>
 <BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_HandlerC
 </UL>
@@ -313,7 +313,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5e]"></a>SystemInit</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, system_stm32f4xx.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SystemInit
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SystemInit &rArr; SetSysClock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
@@ -717,8 +717,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> os_asm.o(OS_func)
 </UL>
-<P><STRONG><a name="[81]"></a>HardFault_HandlerC</STRONG> (Thumb, 96 bytes, Stack size 44 bytes, hardfault.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = HardFault_HandlerC
+<P><STRONG><a name="[81]"></a>HardFault_HandlerC</STRONG> (Thumb, 86 bytes, Stack size 56 bytes, hardfault.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = HardFault_HandlerC
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
 </UL>
@@ -825,8 +825,10 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[84]"></a>SetSysClock</STRONG> (Thumb, 198 bytes, Stack size 0 bytes, system_stm32f4xx.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+<P><STRONG><a name="[84]"></a>SetSysClock</STRONG> (Thumb, 218 bytes, Stack size 12 bytes, system_stm32f4xx.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
 <P><STRONG><a name="[6a]"></a>simpleRoundRobin_scheduler</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, simpleroundrobin.o(.text))

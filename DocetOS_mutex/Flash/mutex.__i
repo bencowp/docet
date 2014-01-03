@@ -1,5 +1,0 @@
--c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I.\OS --c99 
--I C:\Keil\ARM\RV31\INC 
--I C:\Keil\ARM\CMSIS\Include 
--I C:\Keil\ARM\Inc\ST\STM32F4xx 
--o ".\Flash\mutex.o" --omf_browse ".\Flash\mutex.crf" --depend ".\Flash\mutex.d" "Mutex\mutex.c"

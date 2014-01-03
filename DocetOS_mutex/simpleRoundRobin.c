@@ -70,9 +70,11 @@ static void simpleRoundRobin_taskExit(OS_TCB_t * const tcb) {
 
 /* Wait callback */
 static void simpleRoundRobin_wait(void * const reason){
+	//Store the new state and reason for waiting in the TCB of the current task.
 	OS_currentTCB()->data = (uint32_t)reason;
 	OS_currentTCB()->state = TASK_STATE_WAITING;
 	
+	//Invoke the scheduler by setting the PendSV bit
 	SCB->ICSR = SCB_ICSR_PENDSVSET_Msk;
 }
 

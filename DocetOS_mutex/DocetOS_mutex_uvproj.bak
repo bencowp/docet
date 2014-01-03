@@ -139,7 +139,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>14</TargetSelection>
+          <TargetSelection>13</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -425,6 +425,11 @@
               <FileName>simpleRoundRobin.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\simpleRoundRobin.c</FilePath>
+            </File>
+            <File>
+              <FileName>mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mutex\mutex.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -874,6 +879,11 @@
               <FileName>simpleRoundRobin.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\simpleRoundRobin.c</FilePath>
+            </File>
+            <File>
+              <FileName>mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mutex\mutex.c</FilePath>
             </File>
           </Files>
         </Group>
